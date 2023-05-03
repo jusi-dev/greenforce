@@ -8,7 +8,9 @@ new Glide('.glide', {
     hoverpause: false
 }).mount()
 
-// const heroScreen = document.getElementById('welcome');
+const intro = document.getElementById('intro');
+const nav = document.getElementById('nav');
+const hero = document.getElementById('hero');
 
 /*
 window.addEventListener("load", (event) => {
@@ -49,20 +51,15 @@ window.addEventListener("load", (event) => {
         });
     })
   })
-
-  const offerSection = document.getElementById('what-we-offer');
-  const aboutSection = document.getElementById('about-us');
-  const memberSection = document.getElementById('membership');
-  const joinSection = document.getElementById('join-us');
+*/
 
   const animationObserver = new IntersectionObserver((entries) => {
     // Check if element is intersecting with the viewport
     for (const entry of entries) {
       if (entry.isIntersecting) {
-        if (entry.target === offerSection) {
+        if (entry.target === intro) {
           entry.target.classList.add('animate__fadeIn');
-          offerSection.style.visibility = 'visible';
-        } else if (entry.target === aboutSection) {
+        } /*else if (entry.target === aboutSection) {
           entry.target.classList.add('animate__fadeInLeft');
           aboutSection.style.visibility = 'visible';
         } else if (entry.target === memberSection) {
@@ -71,18 +68,27 @@ window.addEventListener("load", (event) => {
         } else if (entry.target === joinSection) {
           entry.target.classList.add('animate__fadeInLeft');
           joinSection.style.visibility = 'visible';
+        }*/
+      }
+    }
+  });
+
+  const navObserver = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if(!entry.isIntersecting) {
+        if (entry.target === hero) {
+          nav.classList.add('bg-forest-green');
         }
+      } else {
+        nav.classList.remove('bg-forest-green');
       }
     }
   }, {
-    rootMargin: '-10%'
-  });
+    rootMargin: '-50%',
+  })
 
-  animationObserver.observe(offerSection);
-  animationObserver.observe(aboutSection);
-  animationObserver.observe(memberSection);
-  animationObserver.observe(joinSection);
-  */
+  animationObserver.observe(intro);
+  navObserver.observe(hero);
   
 
   
