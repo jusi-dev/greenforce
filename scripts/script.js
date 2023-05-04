@@ -73,22 +73,17 @@ window.addEventListener("load", (event) => {
     }
   });
 
-  const navObserver = new IntersectionObserver((entries) => {
-    for (const entry of entries) {
-      if(!entry.isIntersecting) {
-        if (entry.target === hero) {
-          nav.classList.add('bg-forest-green');
-        }
-      } else {
-        nav.classList.remove('bg-forest-green');
-      }
+  document.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop >= 100) {
+      nav.classList.add('bg-forest-green');
+    } else {
+      nav.classList.remove('bg-forest-green');
     }
-  }, {
-    rootMargin: '-50%',
   })
 
   animationObserver.observe(intro);
-  navObserver.observe(hero);
   
 
   
