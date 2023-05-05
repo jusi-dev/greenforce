@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +46,7 @@
             <h1 class="text-white text-3xl font-extrabold text-center">Help now to <br> save our planet</h1>
             <div class="mt-2 h-0.5 bg-white w-2/3 mx-auto"></div>
             <p class="mt-2 text-white text-center px-10">Air pollution is responsible for approximately 7 million premature deaths globally each year.</p>
-            <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-6 mx-auto text-lg text-white shadow-2xl rounded-xl font-semibold hover:scale-110 transition-all active:scale-90">Learn more</button>
+            <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-6 mx-auto text-lg text-white shadow-2xl rounded-xl font-semibold hover:scale-110 transition-all active:scale-90"><a href="#articles">Learn more</a></button>
         </div>
     </div>
 
@@ -83,40 +83,41 @@
         <div class="p-6">
             <div data-glide-el="track" class="glide__track">
                 <ul class="glide__slides">
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/help.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/beach.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/outside.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] w-full" src="./img/help.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] w-full" src="./img/beach.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] w-full" src="./img/outside.jpg"/></li>
                 </ul>
             </div>
-            <div class="glide__arrows text-forest-green text-3xl font-extrabold flex pt-1 w-full" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left mx-auto border-forest-green border-2 rounded-xl px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir="<">&#8810;</button>
-                <button class="glide__arrow glide__arrow--right mx-auto border-forest-green border-2 rounded-xl p-1 px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir=">">&#8811;</button>
+            <div class="glide__arrows text-forest-green text-3xl font-extrabold flex pt-6 w-full" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left border-forest-green border-2 rounded-xl px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir="<">&#8810;</button>
+                <button class="glide__arrow glide__arrow--right ml-auto border-forest-green border-2 rounded-xl p-1 px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir=">">&#8811;</button>
             </div>
         </div>
     </div>
 
     <!-- Article section -->
 
-    <div class="flex flex-col mt-12 mx-6">
+    <div class="flex flex-col pt-16 mx-6" id="articles">
         <h2 class="text-forest-green text-3xl font-extrabold mx-auto text-center">Articles</h2>
         <div class="mt-2 h-0.5 bg-forest-green w-[40vw] mx-auto"></div>
 
         <div class="mt-10 flex flex-col border-forest-green border-4 rounded-xl bg-slate-50">
             <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-t-lg"></div>
-            <div class="p-2">
+            <div class="p-6 pt-4">
                 <h3 class="mt-1 text-xl font-bold">Why is there so much plastic?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
-                <button class="mt-6 py-2 px-4 bg-forest-green-light border-forest-green mx-auto rounded-lg border-4 text-white font-semibold">Learn more</button>
+                <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
+                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
             </div>
         </div>
 
-        <div class="mt-20 flex flex-col bg-slate-50">
-            <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-lg"></div>
-            <div class="p-2">
+        <div class="mt-10 flex flex-col border-forest-green border-4 rounded-xl bg-slate-50">
+            <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-t-lg"></div>
+            <div class="p-6 pt-4">
                 <h3 class="mt-1 text-xl font-bold">Are we producing too much CO2?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
                 <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
-                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-2xl font-semibold">Learn more</button>
+                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
             </div>
         </div>
 
@@ -124,6 +125,16 @@
             <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-lg"></div>
             <div class="p-2">
                 <h3 class="mt-1 text-xl font-bold">How will the world look like, today in 10 years?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
+                <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
+                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+            </div>
+        </div>
+
+        <div class="mt-20 flex flex-col bg-slate-50">
+            <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-lg"></div>
+            <div class="p-2">
+                <h3 class="mt-1 text-xl font-bold">What happens to the climate if there are no cars?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
                 <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
                 <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
