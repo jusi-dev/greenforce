@@ -44,23 +44,23 @@
     <div class="bg-[url('../img/Hero.png')] bg-center bg-no-repeat bg-[size:auto_100%] flex flex-col h-screen border-b-8 border-forest-green" id="hero">
         <div class="flex flex-col my-auto">
             <h1 class="text-white text-3xl font-extrabold text-center">Help now to <br> save our planet</h1>
-            <div class="mt-2 h-0.5 bg-white w-2/3 mx-auto"></div>
-            <p class="mt-2 text-white text-center px-10">Air pollution is responsible for approximately 7 million premature deaths globally each year.</p>
+            <div class="mt-2 h-0.5 bg-white w-2/3 md:w-1/3 mx-auto"></div>
+            <p class="mt-2 text-white text-center px-10 md:px-[25vw] md:text-lg">Air pollution is responsible for approximately 7 million premature deaths globally each year.</p>
             <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-6 mx-auto text-lg text-white shadow-2xl rounded-xl font-semibold hover:scale-110 transition-all active:scale-90"><a href="#articles">Learn more</a></button>
         </div>
     </div>
 
     <!-- Intro section -->
     
-    <div class="mt-10 mx-6" id="intro">
+    <div class="mt-10 md:mt-14 mx-6 md:mx-16 lg:grid lg:grid-cols-2 lg:gap-x-14" id="intro">
         <div>
             <h2 class="text-forest-green text-3xl font-extrabold">You can <span class="font-medium">save</span> the <br> <span class="font-medium">earth</span> today!</h2>
-            <div class="flex flex-row mt-2">
+            <div class="flex flex-row mt-2 md:pr-10">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi repudiandae numquam quidem?</p>
-                <img class="float-right -mt-10 w-28 h-28" src="./img/Earth.png">
+                <img class="float-right -mt-10 md:-mt-16 w-28 h-28" src="./img/Earth.png">
             </div>
         </div>
-        <div class="text-right mt-16">
+        <div class="text-right mt-16 md:mt-20 lg:mt-0">
             <h2 class="text-sky-500 text-3xl font-extrabold">How <span class="font-medium">dangerous</span> <br> is <span class="font-medium">PET</span>?</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut in porro sint? Beatae, nihil enim? Assumenda eveniet, amet rem ducimus quos deleniti natus aliquid!</p>
             <button class="border-sky-500 bg-sky-500 border-2 py-2 px-4 mt-6 mx-auto text-lg text-white shadow-2xl rounded-lg font-semibold">Learn more</button>
@@ -68,24 +68,24 @@
     </div>
 
     <!-- Image banner -->
-    <div class="mt-16 flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto]">
+    <div class="mt-16 flex w-full h-[20vh] lg:h-[30vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto]">
         <h3 class="text-white text-4xl font-extrabold mx-auto my-auto">Change it now!</h3>
     </div>
 
     <!-- What we do -->
 
-    <div class="flex flex-col mt-12 mx-6">
+    <div class="flex flex-col mt-16 md:mt-22 mx-6 md:mx-16 lg:mx-28 lg:mt-24">
         <h2 class="text-forest-green text-3xl font-extrabold mx-auto text-center">What <span class="font-medium">we</span> do <br> <span class="font-medium">against</span> it!</h2>
         <div class="mt-2 h-0.5 bg-forest-green w-2/3 mx-auto"></div>
         <p class="mt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum rem beatae illum et reiciendis omnis velit debitis aliquid similique quisquam reprehenderit magni totam voluptas eligendi, neque veniam? Voluptate, perspiciatis reprehenderit.</p>
     </div>
-    <div class="glide mt-4 lg:mt-0 md:mt-6 flex flex-col">
+    <div class="glide mt-4 lg:mt-0 md:mt-6 flex flex-col md:px-16">
         <div class="p-6">
             <div data-glide-el="track" class="glide__track">
                 <ul class="glide__slides">
-                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] w-full" src="./img/help.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] w-full" src="./img/beach.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] w-full" src="./img/outside.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] lg:h-[60vh] w-full" src="./img/help.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] lg:h-[60vh] w-full" src="./img/beach.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl object-cover h-[30vh] lg:h-[60vh] w-full" src="./img/outside.jpg"/></li>
                 </ul>
             </div>
             <div class="glide__arrows text-forest-green text-3xl font-extrabold flex pt-6 w-full" data-glide-el="controls">
@@ -97,57 +97,59 @@
 
     <!-- Article section -->
 
-    <div class="flex flex-col pt-16 mx-6" id="articles">
+    <div class="flex flex-col pt-20 mx-6 md:mx-20" id="articles">
         <h2 class="text-forest-green text-3xl font-extrabold mx-auto text-center">Articles</h2>
-        <div class="mt-2 h-0.5 bg-forest-green w-[40vw] mx-auto"></div>
+        <div class="mt-2 h-0.5 bg-forest-green w-[40vw] md:w-[30vw] mx-auto"></div>
 
-        <div class="mt-10 flex flex-col border-forest-green border-4 rounded-xl bg-slate-50">
-            <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-t-lg"></div>
-            <div class="p-6 pt-4">
-                <h3 class="mt-1 text-xl font-bold">Why is there so much plastic?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
-                <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
-                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+        <div class="lg:grid lg:grid-cols-2 lg:gap-x-14 md:px-24 lg:px-0">
+            <div class="mt-10 flex flex-col border-forest-green border-4 rounded-xl bg-slate-50">
+                <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-t-lg"></div>
+                <div class="p-6 pt-4">
+                    <h3 class="mt-1 text-xl font-bold">Why is there so much plastic?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
+                    <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
+                    <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+                </div>
             </div>
-        </div>
 
-        <div class="mt-10 flex flex-col border-forest-green border-4 rounded-xl bg-slate-50">
-            <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-t-lg"></div>
-            <div class="p-6 pt-4">
-                <h3 class="mt-1 text-xl font-bold">Are we producing too much CO2?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
-                <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
-                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+            <div class="mt-10 flex flex-col border-forest-green border-4 rounded-xl bg-slate-50 drop-shadow-xl">
+                <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-t-lg"></div>
+                <div class="p-6 pt-4">
+                    <h3 class="mt-1 text-xl font-bold">Are we producing too much CO2?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
+                    <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
+                    <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+                </div>
             </div>
-        </div>
 
-        <div class="mt-20 flex flex-col bg-slate-50">
-            <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-lg"></div>
-            <div class="p-2">
-                <h3 class="mt-1 text-xl font-bold">How will the world look like, today in 10 years?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
-                <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
-                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+            <div class="mt-20 flex flex-col bg-slate-50 drop-shadow-xl rounded-lg p-4">
+                <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-lg"></div>
+                <div class="p-2">
+                    <h3 class="mt-1 text-xl font-bold">How will the world look like, today in 10 years?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
+                    <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
+                    <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+                </div>
             </div>
-        </div>
 
-        <div class="mt-20 flex flex-col bg-slate-50">
-            <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-lg"></div>
-            <div class="p-2">
-                <h3 class="mt-1 text-xl font-bold">What happens to the climate if there are no cars?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
-                <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
-                <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+            <div class="mt-20 flex flex-col bg-slate-50">
+                <div class="flex w-full h-[20vh] bg-[url('../img/Bottles.png')] bg-center bg-no-repeat bg-[size:100%_auto] rounded-lg"></div>
+                <div class="p-2">
+                    <h3 class="mt-1 text-xl font-bold">What happens to the climate if there are no cars?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae distinctio impedit minima eaque, aut reprehenderit placeat soluta saepe accusantium!</p>
+                    <p class="text-gray-500 text-sm mt-2">02.04.2023</p>
+                    <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg rounded-xl font-semibold">Learn more</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="flex flex-col mt-16 mx-6">
+    <div class="flex flex-col mt-20 mx-6 md:mt-32 md:mx-24 lg:mx-32">
         <h2 class="text-forest-green text-3xl font-extrabold mx-auto text-center">Stay up-to-date</h2>
         <div>
             <!-- Begin Mailchimp Signup Form -->
-            <div id="mc_embed_signup" class="bg-white flex flex-col w-full p-4 border-forest-green border-4 rounded-xl mt-6">
-                <form action="https://gmx.us8.list-manage.com/subscribe/post?u=e17c76e2c24a9ae18bd3811dc&amp;id=dba83f07d1&amp;f_id=006808e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup" class="bg-white flex flex-row w-full p-4 border-forest-green border-4 rounded-xl mt-6">
+                <form action="https://gmx.us8.list-manage.com/subscribe/post?u=e17c76e2c24a9ae18bd3811dc&amp;id=dba83f07d1&amp;f_id=006808e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate flex-col lg:w-[60vw]" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
                     <h2 class="text-forest-green text-2xl font-semibold">Receive all our news!</h2>
                     <div class="indicates-required text-sm"><span class="text-red-600">*</span> indicates required</div>
@@ -164,16 +166,33 @@
                         <div class="optionalParent flex flex-col">
                             <div class="clear foot">
                                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 text-lg text-white drop-shadow-lg">
-                                <p class="brandingLogo mt-6"><a href="http://eepurl.com/iqtJ5g" title="Mailchimp - email marketing made easy and fun" class="ml-auto"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                                <p class="brandingLogo mt-10"><a href="http://eepurl.com/iqtJ5g" title="Mailchimp - email marketing made easy and fun" class="ml-auto"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
                             </div>
                         </div>
                     </div>
                 </form>
+                <div class="hidden w-auto h-full lg:flex">
+                    <img class="object-cover" src="./img/Bottles.png">
+                </div>
             </div>
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             <!--End mc_embed_signup-->
         </div>
     </div>
+
+    <footer class="bg-forest-green flex flex-col p-6 mt-16">
+        <div>
+            <div><a href="#welcome"><h1 class="text-3xl font-bold text-white text-center cursor-pointer"><img src="./img/Logo.png"></h1></a></div>
+            <ul class="text-white font-bold mt-4 gap-4 text-lg">
+                <li>Start</li>
+                <li>Articles</li>
+                <li>About Us</li>
+                <li>Contact</li>
+                <li>Newsletter</li>
+            </ul>
+            <div class="flex text-white font-bold w-full text-sm mt-6"><p class="mx-auto">&copy; 2023 Justin Winistörfer</p></div>
+        </div>
+    </footer>
 
     <script type="module" src="./scripts/script.js"></script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e17c76e2c24a9ae18bd3811dc/1877d14d5f68db9d1919a6cd0.js");</script>
