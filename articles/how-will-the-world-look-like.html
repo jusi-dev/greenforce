@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/glide.core.min.css">
+    <title>GreenForce - Help now!</title>
+</head>
+<body class="bg-slate-50">
+    <nav class="flex flex-row w-full  h-auto p-4 fixed z-50 transition duration-500 ease-in-out bg-forest-green" id="nav">
+        <div class="">
+            <div><a href="../index.html"><h1 class="text-3xl font-bold text-white text-center cursor-pointer"><img class="h-12" src="../img/Logo1.png"></h1></a></div>
+        </div>
+        <div class="space-y-2 block ml-auto my-auto z-50 lg:hidden" id="burger-menu">
+            <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
+            <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
+            <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
+        </div>
+        <ul class="hidden lg:flex text-2xl  gap-8 ml-auto mr-10 text-white my-auto">
+            <li><a href="#what-we-offer" class="hover:text-green-900">What we do</a></li>
+            <li><a href="#about-us" class="hover:text-green-900">Articles</a></li>
+            <li><a href="#membership" class="hover:text-green-900">Newsletter</a></li>
+        </ul>
+    </nav>
+    <div>
+    </div>
+    <div class="hidden w-full h-full bg-gradient-to-b from-neutral-100 to-cyan-400 fixed transition-all text-center z-40 lg:hidden" id="nav-links">
+        <ul class="md:flex md:flex-col md:items-center mt-[30vh] text-3xl text-zinc-700 gap-8 nav-items">
+            <li class="text-cyan-500 font-extrabold text-4xl mb-4">FitZone</li>
+            <li><a href="#what-we-offer" class="hover:text-gray-500">What we offer</a></li>
+            <li><a href="#about-us" class="hover:text-gray-500">About Us</a></li>
+            <li><a href="#membership" class="hover:text-gray-500">Membership</a></li>
+            <li><a href="#join-us" class="hover:text-gray-500">Join us!</a></li>
+        </ul>
+    </div>
+
+    <div class="flex flex-col pt-[15vh] w-full drop-shadow-lg  px-4 ">
+        <div class="flex flex-col w-full">
+            <div class="flex w-[90vw] h-[30vh]">
+                <img class="object-cover rounded w-full h-auto" src="../img/pollution.jpg">
+            </div>
+            <h1 class="mt-4 text-3xl font-bold">How will the world look like, today in 10 years?</h1>
+        </div>
+        <div class="px-2 mt-2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis et facilis asperiores aspernatur aperiam veniam numquam, cupiditate eos mollitia exercitationem itaque. Cupiditate molestias ut laborum ducimus officiis adipisci magni eum libero quae. Quibusdam vero quasi asperiores hic odit. Dolorum, laudantium animi? Expedita voluptas corporis sequi. Ab, sunt quod! Repudiandae ipsa quod hic rerum dicta. Dignissimos culpa numquam voluptas accusantium assumenda adipisci quae placeat? Sit esse qui sequi numquam, soluta impedit incidunt ipsa asperiores, repellat est cumque at. Eligendi distinctio eveniet, nam eum fuga sed, maiores officia pariatur dolores, incidunt sapiente natus! Nemo dolore fuga eum. Odio, dignissimos eius. Perferendis sed iure aut similique cum eum consectetur vel molestiae aperiam, voluptates repellendus aliquid. Quos, ipsam hic! Suscipit dolore neque, doloribus porro perspiciatis enim quod quo sint iusto eos corrupti magnam nesciunt perferendis ratione laboriosam quos blanditiis tempora inventore quibusdam omnis numquam illum natus vitae. Doloribus libero ducimus suscipit et provident quia!</p>
+        </div>
+        <div>
+            <button class="border-forest-green-light bg-forest-green-light border-2 py-2 px-4 mt-4 w-[30vw] text-lg text-white drop-shadow-lg rounded-xl font-semibold hover:scale-110 transition-all active:scale-90"><a href="../index.html#articles">Go Back</a></button>
+        </div>
+    </div>
+
+    <footer class="bg-forest-green flex flex-col p-6 mt-16">
+        <div>
+            <div><a href="../index.html"><h1 class="text-3xl font-bold text-slate-100 text-center cursor-pointer"><img class="h-11" src="../img/Logo1.png"></h1></a></div>
+            <div class="">
+                <div class="flex flex-col lg:flex-row mt-4 text-lg text-white lg:justify-between lg:mx-10">
+                    <ul class="font-bold gap-4 flex-row cursor-pointer">
+                        <li><a href="../index.html">Start</a></li>
+                        <li><a href="../index.html#articles">Articles</a></li>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#newsletter">Newsletter</a></li>
+                    </ul>
+                    <ul class="mt-6 lg:mt-0 lg:text-center text-base">
+                        <li class="font-bold text-lg">Contact</li>
+                        <li>Max Mustermann</li>
+                        <li>Phone: +41 77 123 45 67</li>
+                        <li>Mail: example@greenforce.ch</li>
+                    </ul>
+                    <ul class="mt-6 lg:mt-0 lg:text-right text-base">
+                        <li class="font-bold text-lg">Address</li>
+                        <li>Examplestreet 1</li>
+                        <li>4500 Solothurn</li>
+                        <li>SWITZERLAND</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex text-white font-bold w-full text-xs mt-8"><div class="lg:justify-between lg:mx-10"><p class="">&copy; 2023 Justin Winistörfer</p></div></div>
+        </div>
+    </footer>
+
+    <script type="module" src="../scripts/script.js"></script>
+</body>
+</html>
