@@ -24,12 +24,15 @@ navLinks.style.transform = "translateY(-100vh)";
 burgerMenu.addEventListener('click', function() {
   navLinks.classList.toggle('active');
   if (navLinks.classList.contains('active')) {
+      navLinks.style.opacity = '1';
       navLinks.style.transform = "translateY(0vh)"
       children.forEach(child => {
           child.classList.add('bg-zinc-700');
       });
   } else {
       navLinks.style.transform = "translateY(-100vh)";
+      navLinks.style.opacity = '0';
+      navLinks.classList.remove('opacity-100');
       children.forEach(child => {
           child.classList.remove('bg-zinc-700');
       });
