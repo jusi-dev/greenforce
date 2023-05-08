@@ -6,27 +6,23 @@ new Glide('.glide', {
     autoplay: 4000,
     animationDuration: 600,
     hoverpause: false
-}).mount()
+}).mount();
 
 const intro = document.getElementById('intro');
 const nav = document.getElementById('nav');
 const hero = document.getElementById('hero');
 
-/*
-window.addEventListener("load", (event) => {
-    console.log("page is fully loaded");
-  });
-
   const burgerMenu = document.getElementById('burger-menu');
   const navLinks = document.getElementById('nav-links');
   const children = burgerMenu.querySelectorAll('.bar');
   const navItems = document.querySelector('.nav-items');
-  const navChildren = navItems.querySelectorAll('li');
+  const navChildren = navItems.querySelectorAll('li'); 
   // navLinks.style.display = "none";
 
   navLinks.style.transform = "translateY(-100vh)";
   
   burgerMenu.addEventListener('click', function() {
+    console.log('click');
     navLinks.classList.toggle('active');
     if (navLinks.classList.contains('active')) {
         navLinks.style.transform = "translateY(0vh)"
@@ -50,27 +46,6 @@ window.addEventListener("load", (event) => {
             child.classList.remove('bg-zinc-700');
         });
     })
-  })
-*/
-
-  const animationObserver = new IntersectionObserver((entries) => {
-    // Check if element is intersecting with the viewport
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        if (entry.target === intro) {
-          entry.target.classList.add('animate__fadeIn');
-        } /*else if (entry.target === aboutSection) {
-          entry.target.classList.add('animate__fadeInLeft');
-          aboutSection.style.visibility = 'visible';
-        } else if (entry.target === memberSection) {
-          entry.target.classList.add('animate__fadeInRight');
-          memberSection.style.visibility = 'visible';
-        } else if (entry.target === joinSection) {
-          entry.target.classList.add('animate__fadeInLeft');
-          joinSection.style.visibility = 'visible';
-        }*/
-      }
-    }
   });
 
   document.addEventListener('scroll', () => {
@@ -81,9 +56,7 @@ window.addEventListener("load", (event) => {
     } else {
       nav.classList.remove('bg-forest-green');
     }
-  })
-
-  animationObserver.observe(intro);
+  });
   
 
   
