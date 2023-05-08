@@ -1,13 +1,3 @@
-import Glide from './glide.esm.js'
-
-new Glide('.glide', {
-    type: 'carousel',
-    perView: 1,
-    autoplay: 4000,
-    animationDuration: 600,
-    hoverpause: false
-}).mount();
-
 const intro = document.getElementById('intro');
 const nav = document.getElementById('nav');
 const hero = document.getElementById('hero');
